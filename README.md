@@ -1,14 +1,32 @@
-FastAPI Todo API
-This is a simple Todo API built with FastAPI. It allows users to create, read, update, and delete (CRUD) todo items.
+# Todo API
 
-🚀 Features
-Get all todos: Fetch a list of todos.
-Get a single todo: Retrieve details of a specific todo by ID.
-Create a todo: Add a new todo to the list.
-Update a todo: Modify an existing todo.
-Delete a todo: Remove a todo from the list.
+## Description
+This is a simple **Todo API** built with [FastAPI](w) that supports **CRUD (Create, Read, Update, Delete)** operations for managing todo items. It provides endpoints to fetch all todos, retrieve a specific todo by ID, add new todos, update existing ones, and delete them. The API uses **Pydantic** for data validation and runs on **Uvicorn**.
 
-🛠 Tech Stack
-FastAPI - High-performance Python web framework.
-Pydantic - Data validation and serialization.
-Uvicorn - ASGI server for FastAPI.
+## Setup & Run
+
+### Clone the repository:
+```sh
+git clone https://github.com/Shreyaveni/TodoAPI.git
+cd TodoAPI
+```
+
+### Install dependencies:
+```sh
+pip install fastapi uvicorn
+```
+
+### Run the API server:
+```sh
+uvicorn main:app --reload
+```
+
+### Access the API at:
+```
+http://127.0.0.1:8000
+```
+
+### API Documentation:
+- **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
